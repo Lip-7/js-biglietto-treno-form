@@ -26,18 +26,32 @@
                         <input required type="number" id="age" name="age">
                     </div>
                     <div class="col-12">
-                        <button id="btnCalc" type="button" class="rounded-2 btn" onclick="priceCalculator()">Find out the price</button>
+                        <button id="btnCalc" type="button" class="rounded-2 btn">Find out the price</button>
                     </div>
                 </div>
                 <div id="result" class="row d-none m-2">
                     <div class="col-12">
                         <h2 id="ticketMessage" class="h1 m-5">The ticket cost is <span id="ticketCosttry">0</span> &euro;</h2>
-                        <button id="btnReCalc" type="submit" class="rounded-2 btn"><a href="./index.html">Recalculate</a></button>
+                        <div class="btns d-flex gap-5 justify-content-center">
+                            <button id="btnReCalc" class="rounded-2 btn"><a href="./index.html">Recalculate</a></button>
+                            <button id="btnShowDetails" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" class="rounded-2 btn">Show Details</button>
+                        </div>
                     </div>
                 </div>
             </form>
         </main>
     </div>
+    <div class="offcanvas offcanvas-start" id="offcanvasScrolling" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Ticket Cost Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <p></p>
+          </div>
+        </div>
+      </div>
     <script src="./js/script.js"></script>
 </body>
 </html>

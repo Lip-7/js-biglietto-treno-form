@@ -1,4 +1,3 @@
-
 function priceCalculator(){
     const km = document.getElementById('km').value;
     const age = document.getElementById('age').value;
@@ -18,3 +17,16 @@ function priceCalculator(){
     document.getElementById('result').classList.remove('d-none');
     document.getElementById('calculator').classList.add('d-none');
 }
+
+
+document.getElementById('btnCalc').addEventListener('click', priceCalculator);
+
+const btnShowDetails = document.getElementById('btnShowDetails');
+var offcanvas = document.getElementById('offcanvasScrolling');
+btnShowDetails.addEventListener('click', function () {
+    offcanvas.classList.add('show');
+});
+var btnClose = document.querySelector('.btn-close');
+btnClose.addEventListener('click', function () {
+    offcanvas.classList.remove('show');
+});

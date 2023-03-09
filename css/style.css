@@ -38,7 +38,7 @@ main{
     padding: 20px 30px;
     
 }
-#btnCalc, #btnReCalc{
+#btnCalc, #btnReCalc, #btnShowDetails{
     border: 0px;
     padding: 5px 10px;
     background-color: var(--green);
