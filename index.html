@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -35,10 +36,14 @@
                         <div class="btns d-flex gap-5 justify-content-center">
                             <button id="btnReCalc" class="rounded-2 btn"><a href="./index.html">Recalculate</a></button>
                             <button id="btnShowDetails" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" class="rounded-2 btn">Show Details</button>
+                            <button id="btnticket" type="button" class="rounded-2 btn">View your ticket</button>
+
                         </div>
                     </div>
                 </div>
             </form>
+            <div id="ticket-facsimile" class="rounded-4 overflow-hidden mt-5 d-none">
+            </div>
         </main>
     </div>
     <div class="offcanvas offcanvas-start" id="offcanvasScrolling" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
