@@ -21,7 +21,7 @@ function priceCalculator(){
         document.getElementById('ticketDatails').innerHTML += `<h6 class="mt-4">Since the age of the traveler is <span id="travelerAge">${age}</span>, you got the <em id='offert-type' class='h5'>${offert}</em></h6>`
         document.getElementById('ticketDatails').innerHTML += `<h6 class="mt-4">Since the journey will be ${km}Km it will last on average ${minutesTraveling} minutes</h6>`
     }else{
-        document.getElementById('ticketMessage').innerHTML = `<h2 id="ticketMessage" class="h1 m-5">${errorMessage} <span id="ticketCosttry">0</span> &euro;</h2>`;
+        document.getElementById('ticketMessage').innerHTML = `<h2 id="ticketMessage" class="h1 m-5">${errorMessage} <span id="ticketCosttry">0</span></h2>`;
     }
 /* modify the visibility of the elements */
     document.getElementById('result').classList.remove('d-none');
